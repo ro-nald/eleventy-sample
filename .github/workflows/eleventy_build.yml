@@ -20,6 +20,8 @@ jobs:
 
       - run: npm run build
 
+      - run: pwd  
+
       - run: tree
 
       - name: Deploy
