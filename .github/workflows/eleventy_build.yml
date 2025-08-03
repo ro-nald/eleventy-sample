@@ -24,9 +24,13 @@ jobs:
 
       - run: tree
 
+      - run: ls /home/runner/work/eleventy-sample/eleventy-sample/_site
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./_site
           keep_files: true
+
+      - run: ls /home/runner/actions_github_pages_1754245132964
