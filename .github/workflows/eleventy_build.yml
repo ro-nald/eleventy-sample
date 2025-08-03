@@ -20,6 +20,8 @@ jobs:
 
       - run: npm run build
 
+      - run: tree
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
